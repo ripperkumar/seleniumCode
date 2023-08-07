@@ -22,9 +22,6 @@ public class dropDownPractice {
         dropDown.selectByIndex(3);
         System.out.println(dropDown.getFirstSelectedOption().getText());
 
-
-
-
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
         driver.findElement(By.id("divpaxinfo")).click();
@@ -36,6 +33,10 @@ public class dropDownPractice {
 
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 
+//dynamic dropdown
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+        driver.findElement(By.xpath("//a[@value='CJB']")).click();
+        driver.findElement(By.xpath("//a[@value='BLR'][1]")).click();
         // driver.quit();
     }
 
