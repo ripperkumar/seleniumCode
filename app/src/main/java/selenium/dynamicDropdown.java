@@ -30,9 +30,10 @@ driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 driver.findElement(By.xpath("//a[@value='BLR']")).click();
 
 Thread.sleep(2000);
-
+//instead of using index in xpath use can use below 
+//there are two xpath first one is called parent xpath [space] child xpath....... selenium will onl;y search child xpath in context or scope of parent xpath
 //driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
-
+==
 driver.findElement(By.xpath("//div[@id='glsctl00_mainContent_ddl_destinationStation1_CTNR'] //a[@value='MAA']")).click();
 
 driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight.ui-state-active")).click();
